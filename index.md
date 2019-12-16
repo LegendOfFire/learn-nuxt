@@ -5,7 +5,11 @@
 
 ## create nuxt project
 1. `npx creat-nuxt-app *project-name*`  
-2. 
+2. select Element as UI framework
+3. select axios
+4. select Eslint, Prettier
+5. select Jest
+6. select Universal(SSR)
 
 ## install vscode and extensions below as a start
 1. HTML Snippets
@@ -24,18 +28,24 @@
 
 ## add admin page
 1. Add admin.vue in the pages folder
-2. Add `<h1>This is admin page</h1>
+2. Add `<h1>This is admin page</h1>`
 3. Navigate to <localhost:3000/admin> and see if the route works automatically
 
 ## add programmatic navigation between home page and admin page
-1. 
-use `this.$route.push('*path*')`
+1. add links in home and admin pages
+2. use `this.$route.push('*path*')` in the click handler
 
 ## eslint problem
-  `/* eslint-disable */`  
-  `some lines of code`  
-  `/* eslint-enable */`
-  
-  > By using `npm run lint -- --fix`, some eslint errors/warnings can be fixed automatically
+> Disable eslint for a block of codes
+`/* eslint-disable */`  
+`*some lines of code*`  
+`/* eslint-enable */`
+
+> By using `npm run lint -- --fix`, some eslint errors/warnings can be fixed automatically
 
 ## prettier problem
+1. install prettier vscode extension
+2. add `"endOfLine": "auto"` in rc
+3. Choose prettier as document formatter (described in the article below)
+4. Turn on "format on save" in workspace settings
+5. See article <https://scotch.io/tutorials/code-formatting-with-prettier-in-visual-studio-code>
