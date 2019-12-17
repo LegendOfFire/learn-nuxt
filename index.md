@@ -45,7 +45,12 @@
 
 ## prettier problem
 1. install prettier vscode extension
-2. add `"endOfLine": "auto"` in rc
-3. Choose prettier as document formatter (described in the article below)
+2. add `"endOfLine": "auto"` in project .prettierrc file
+3. Choose prettier as document formatter (described in the articles below)
 4. Turn on "format on save" in workspace settings
-5. See article <https://scotch.io/tutorials/code-formatting-with-prettier-in-visual-studio-code>
+5. See articles <https://scotch.io/tutorials/code-formatting-with-prettier-in-visual-studio-code> and <https://glebbahmutov.com/blog/configure-prettier-in-vscode/>
+in short, add following in workspace settings.json,
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
+}
